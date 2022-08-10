@@ -4,7 +4,7 @@
 
 * Utilização de Métodos Ágeis como Kanban e Scrum;
 * Trabalhar em equipe utilizando Kanban ou Scrum de maneira eficaz;
-* Praticar React;
+* Utilizar React;
 
 ## Tecnologias utilizadas:
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
