@@ -4,9 +4,10 @@ import styled from 'styled-components';
 import logo from '../img/19².png';
 
 const HeaderStyled = styled.div`
-  background-color: RGB(90, 111, 128);
+  background-color: #F3444F;
   display: flex;
   justify-content: center;
+  margin-botton: 10%;
 `;
 
 export default class Header extends Component {
@@ -16,8 +17,8 @@ export default class Header extends Component {
         <HeaderStyled>
           <img
             src={ logo }
-            size="100"
-            height="100"
+            size="150"
+            height="150"
             alt="logo-img"
             style={ { borderRadius: '5rem' } }
           />

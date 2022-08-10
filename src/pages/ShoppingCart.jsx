@@ -30,7 +30,7 @@ const Wrapper = styled.div`
 `;
 
 const ProductContainer = styled.div`
-  background-color: #B7B734;
+  background-color: #fdd8bc;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -94,7 +94,7 @@ class ShoppingCart extends React.Component {
               <ProductContainer key={ title }>
                 <h2
                   data-testid="shopping-cart-product-name"
-                  style={ { color: '#ff006d',
+                  style={ { color: '#f3444f',
                     fontFamily: 'Playfair Display , serif;',
                     fontSize: '25px',
                     margin: '15px' } }
@@ -103,7 +103,7 @@ class ShoppingCart extends React.Component {
                 </h2>
                 <span
                   data-testid="shopping-cart-product-quantity"
-                  style={ { color: '#ff006d',
+                  style={ { color: '#f3444f',
                     fontFamily: 'Playfair Display , serif;',
                     fontSize: '25px',
                     margin: '15px' } }

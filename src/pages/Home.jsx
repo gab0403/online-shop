@@ -2,10 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import ButtonCart from '../components/ButtonCart';
-import { getCategories,
-  /* getProductsFromCategoryAndQuery */
-  /* getProductsCategories */ } from '../services/api';
-// import { saveProducts } from '../services/saveProducts';
+import { getCategories } from '../services/api';
 import Categories from '../components/Categories';
 import ProductCards from '../components/ProductCard';
 
@@ -66,20 +63,27 @@ class Home extends React.Component {
   render() {
     const { categoriesProduct,
       handle, productCard, saveCart, categoriesResults, cartQuantity } = this.props;
-    // console.log(this.props);
     const { categoriesList } = this.state;
     console.log(categoriesProduct);
     return (
       <WrapperEverything data-testid="page-not-found">
         <Search>
           <input
-            style={ { borderRadius: '50px', width: '550px' } }
+            style={ { margin: '5px',
+              borderRadius: '50px',
+              width: '550px',
+              padding: '10px' } }
             type="text"
             data-testid="query-input"
             onChange={ handle }
           />
           <button
-            style={ { borderRadius: '5px', width: '150px', cursor: 'pointer' } }
+            style={ { margin: '5px',
+              borderRadius: '5px',
+              width: '150px',
+              cursor: 'pointer',
+              background: 'orange',
+              border: 'none' } }
             data-testid="query-button"
             type="button"
             onClick={ () => categoriesResults() }
@@ -116,7 +120,6 @@ class Home extends React.Component {
                 id={ element.id }
                 saveProduct={ saveCart }
                 freeShipping={ element.shipping.free_shipping }
-                // quantity={ element.available_quantity }
               />
             ))}
           </StyledContainerProducts>

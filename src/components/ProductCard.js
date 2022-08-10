@@ -10,7 +10,7 @@ const StyledCard = styled.div`
   flex-wrap: wrap;
   width: 40%;
   margin: 0.2rem;
-  background-color: #B7B734;
+  background-color: #fdd8bc;
   border: 0.7rem solid beige;
   border-radius: 3rem;
   transition: transform 500ms ease;
@@ -22,7 +22,7 @@ const StyledCard = styled.div`
 `;
 
 const Title = styled.h1`
-  color: #ff006d;
+  color: #f3444f;
   cursor: pointer;
 `;
 
@@ -76,7 +76,7 @@ class ProductCards extends React.Component {
           <img height="200" src={ thumbnail } alt={ title } />
         </ImageDiv>
         <Wrapper>
-          <p style={ { color: '#ff006d' } }>
+          <p style={ { color: '#f3444f' } }>
             R$
             {price}
           </p>
